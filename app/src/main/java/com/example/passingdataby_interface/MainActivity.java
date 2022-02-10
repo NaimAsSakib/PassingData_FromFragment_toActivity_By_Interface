@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements SendDataInterface
         });
     }
 
-    //
+    //Interface method
     @Override
     public void sendData(String data) {
         textView.setText(data);
