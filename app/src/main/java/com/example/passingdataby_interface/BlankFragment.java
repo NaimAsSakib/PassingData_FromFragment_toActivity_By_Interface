@@ -30,7 +30,7 @@ public class BlankFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String getEditTextData=inputEditText.getText().toString();
-                listener.sendData(getEditTextData);
+                listener.sendData(getEditTextData); //passing editText value through interface method
             }
         });
 
