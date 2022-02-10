@@ -21,12 +21,14 @@ public class MainActivity extends AppCompatActivity implements SendDataInterface
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Opening Fragment
                 BlankFragment blankFragment=new BlankFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.mainContainer,blankFragment).commit();
             }
         });
     }
 
+    //
     @Override
     public void sendData(String data) {
         textView.setText(data);
