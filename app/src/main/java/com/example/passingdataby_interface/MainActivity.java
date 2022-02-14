@@ -24,8 +24,11 @@ public class MainActivity extends AppCompatActivity implements SendDataInterface
                 //Opening Fragment
                 BlankFragment blankFragment=new BlankFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.mainContainer,blankFragment).commit();
+
+                button.setVisibility(View.GONE);//Vanishing button after opening the fragment
             }
         });
+
     }
 
     //Interface method
