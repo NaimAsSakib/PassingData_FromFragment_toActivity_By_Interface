@@ -11,6 +11,9 @@ public class MainActivity extends AppCompatActivity implements SendDataInterface
     TextView textView;
     Button button;
 
+    BlankFragment blankFragment;
+
+    boolean doubleBackpressed;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements SendDataInterface
             @Override
             public void onClick(View v) {
                 //Opening Fragment
-                BlankFragment blankFragment=new BlankFragment();
+                blankFragment =new BlankFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.mainContainer,blankFragment).commit();
 
                 button.setVisibility(View.GONE);//Vanishing button after opening the fragment
@@ -35,5 +38,14 @@ public class MainActivity extends AppCompatActivity implements SendDataInterface
     @Override
     public void sendData(String data) {
         textView.setText(data);
+    }
+
+    @Override
+    public void onBackPressed() {
+        textView.setText(null);
+        button.setVisibility(View.VISIBLE);
+        if(doubleBackpressed==true){
+            super.onBackPressed();
+        }
     }
 }

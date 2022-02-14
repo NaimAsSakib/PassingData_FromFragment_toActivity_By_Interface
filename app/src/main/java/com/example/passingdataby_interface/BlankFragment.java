@@ -46,4 +46,5 @@ public class BlankFragment extends Fragment {
 
         listener=(SendDataInterface)activity;
     }
+
 }
