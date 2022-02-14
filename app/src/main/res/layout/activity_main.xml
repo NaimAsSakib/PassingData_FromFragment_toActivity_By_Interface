@@ -8,9 +8,6 @@
     tools:context=".MainActivity"
     >
 
-
-
-
     <TextView
         android:id="@+id/tvAct"
         android:layout_width="wrap_content"
@@ -34,14 +31,12 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <FrameLayout
-
-        android:elevation="100dp"
+        android:elevation="80dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/mainContainer">
 
     </FrameLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
