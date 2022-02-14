@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="20dp"
     tools:context=".MainActivity"
-    >
+    android:id="@+id/mainContainer">
 
     <TextView
         android:id="@+id/tvAct"
@@ -20,7 +20,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
       />
     <Button
-        android:elevation="0dp"
         android:id="@+id/btnMainAct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,13 +29,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <FrameLayout
-        android:elevation="80dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/mainContainer">
-
-    </FrameLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,8 +5,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="20dp"
-    android:background="@color/white"
-    android:id="@+id/fragment"
     tools:context=".BlankFragment">
 
     <!-- TODO: Update blank fragment layout -->
