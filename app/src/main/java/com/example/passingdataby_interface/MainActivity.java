@@ -40,12 +40,4 @@ public class MainActivity extends AppCompatActivity implements SendDataInterface
         textView.setText(data);
     }
 
-    @Override
-    public void onBackPressed() {
-        textView.setText(null);
-        button.setVisibility(View.VISIBLE);
-        if(doubleBackpressed==true){
-            super.onBackPressed();
-        }
-    }
 }
